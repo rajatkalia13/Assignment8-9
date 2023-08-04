@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+
+</head>
+<body>
+  <h1>Registration Form</h1>
+
+  <form id="registrationForm">
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required>
+      <span class="error" id="firstNameError"></span>
+    </div>
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required>
+      <span class="error" id="lastNameError"></span>
+    </div>
+    <div>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required>
+      <span class="error" id="dobError"></span>
+    </div>
+    <div class="gender-container">
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <span class="gender-label">Male</span>
+      <input type="radio" id="female" name="gender" value="female">
+      <span class="gender-label">Female</span>
+      <span class="error" id="genderError"></span>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <span class="error" id="passwordError"></span>
+    </div>
+    <div>
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" required>
+      <span class="error" id="confirmPasswordError"></span>
+    </div>
+    <div>
+      <button type="button" id="registerBtn">Register</button>
+    </div>
+  </form>
+
+</body>
+</html>
